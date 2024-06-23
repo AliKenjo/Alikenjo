@@ -1,0 +1,113 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+header {
+    background: #222; /* Darker background color for header */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-photo {
+    width: 120px; /* Adjust the size of the photo */
+    height: 120px;
+    border-radius: 50%; /* Rounded shape */
+    margin-right: 20px; /* Spacing between photo and text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #444; /* Darker background color for sections */
+    border-radius: 8px;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+section:hover {
+    background-color: #2c3e50; /* Green-blue hover background color */
+}
+
+h2 {
+    color: #fff; /* White text color */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #222; /* Darker background color for footer */
+    color: #fff;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #555; /* Darker background color for form */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 12px); /* Adjust width to fit within form */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px; /* Adjust height for the message textarea */
+}
+
+button[type="submit"] {
+    background-color: #1abc9c; /* Green background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #16a085; /* Darker green hover color */
+}
