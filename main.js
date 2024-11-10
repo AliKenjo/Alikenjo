@@ -5,22 +5,23 @@
 
 // Event-Listener für das Absenden des Formulars
 document.getElementById("contact").addEventListener("submit", function(event) {
-    event.preventDefault(); // Verhindert das automatische Neuladen der Seite
+    event.preventDefault();
     
-    // Daten aus dem Formular sammeln
     const templateParams = {
-      from_name: document.getElementById("name").value, // Name aus dem Formular
-      reply_to: document.getElementById("email").value, // E-Mail des Absenders
-      message: document.getElementById("message").value // Nachricht aus dem Formular
+      from_name: document.getElementById("name").value,
+      reply_to: document.getElementById("email").value,
+      message: document.getElementById("message").value
     };
-  
-    // E-Mail senden mit EmailJS
+
+    console.log("Sending message with parameters:", templateParams); // Debugging-Log
+
     emailjs.send("service_s2wd5jm", "template_2ft7yhn", templateParams)
       .then(function(response) {
-        alert("Message sent successfully!"); // Nachricht bei Erfolg
+        alert("Message sent successfully!");
         console.log("SUCCESS!", response.status, response.text);
       }, function(error) {
-        alert("Error sending message."); // Fehlernachricht
+        alert("Error sending message.");
         console.log("FAILED...", error);
       });
 });
+
