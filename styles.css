@@ -237,3 +237,67 @@ h2 {
         transform: translate(-1000px, 0);
     }
 }
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack left and right sections vertically */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Full width for mobile */
+        margin-right: 0; /* Remove margin for stacked layout */
+        border-right: none; /* Remove border for stacked layout */
+    }
+
+    .photo-container {
+        width: 150px; /* Smaller photo for mobile */
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    h2 {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .contact-card {
+        width: 120px; /* Smaller contact card for mobile */
+        height: 120px;
+    }
+
+    .contact-card .front i {
+        font-size: 1.5rem; /* Smaller icon for mobile */
+    }
+
+    .contact-card .front p {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+
+    .contact-card .back a {
+        font-size: 0.8rem; /* Smaller text for mobile */
+    }
+
+    section {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .skills-list li {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+
+    .job h3, .education-item h3 {
+        font-size: 1.1rem; /* Smaller text for mobile */
+    }
+
+    .job h4, .education-item h4 {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+
+    .job p, .education-item p {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+}
