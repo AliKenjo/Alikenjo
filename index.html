@@ -3,89 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Kenjo</title>
-    <meta name="author" content="Ali kenjo">
+    <title>Ali Kenjo - Modern CV</title>
+    <meta name="author" content="Ali Kenjo">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="photo.jpg" alt="cv photo" class="cv-photo">
-            <div>
-                <h1>Ali kenjo</h1>
-                <h2>IT-Expert</h2>
+    <!-- Main Layout -->
+    <div class="container">
+        <!-- Left Side: Name and Photo -->
+        <div class="left-side">
+            <div class="profile">
+                <div class="photo-container">
+                    <img src="photos/photo.jpg" alt="Ali Kenjo" class="cv-photo">
+                </div>
+                <h1>Ali Kenjo</h1>
+                <h2>IT Expert & Web Developer</h2>
+            </div>
+            <!-- Minimalist Email Contact -->
+            <div class="email-contact">
+                <p>For inquiries, feel free to reach out:</p>
+                <a href="mailto:your.email@example.com" class="email-link">alikenjo1@gmail.com</a>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a web developer and IT technician based in Germany, with experience in the field since 2019.</p>
-    </section>
+        <!-- Right Side: Content -->
+        <div class="right-side">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I'm a web developer and IT technician based in Germany, with experience in the field since 2019. I specialize in creating user-friendly websites and providing technical support for Linux and Windows environments.</p>
+            </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Developer specializing in HTML, CSS, and JavaScript since 2023.</li>
-            <li>Providing Windows administration support.</li>
-            <li>Offering user support in Linux environments.</li>
-            <li>Configuring workstations with network connectivity.</li>
-        </ul>
-    </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li><i class="fas fa-code"></i> Developer specializing in HTML, CSS, and JavaScript since 2023.</li>
+                    <li><i class="fas fa-desktop"></i> Offering user support in Linux and Windows environments.</li>
+                    <li><i class="fas fa-network-wired"></i> Configuring workstations with network connectivity.</li>
+                </ul>
+            </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Independent IT Expert and Developer</h3>
-            <h4>Freelance</h4>
-            <h4>one year in the IT-Department of Sophien und Hufeland Klinikum Weimar, Germany</h4>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Independent IT Expert and Developer</h3>
+                    <h4>Freelance</h4>
+                    <p>Provided IT solutions and web development services to clients.</p>
+                </div>
+                <div class="job">
+                    <h3>IT Department</h3>
+                    <h4>Sophien und Hufeland Klinikum Weimar, Germany</h4>
+                    <p>Worked for one year in the IT department, managing network configurations and user support.</p>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Training as a Computer Technician</h3>
+                    <h4>Computer Science Institute in Latakia, Syria</h4>
+                    <p>Year of Graduation: 2017</p>
+                </div>
+                <div class="education-item">
+                    <h3>Online Web Developer Course</h3>
+                    <h4>ILS Institute</h4>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Training as a computer technician</h3>
-            <h4>Computer Science Institute in Latakia, Syria</h4>
-            <p>Year of Graduation: 2017</p>
-            <h3>online WEB Developer course by ILS Institute</h3>
-        </div>
-    </section>
+    <!-- Abstract Background -->
+    <div class="abstract-background"></div>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="main.js"></script>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>To inquire further or discuss potential projects, please provide your contact information below.</p>
-        <form id="contact">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy;  Ali Kenjo. All rights reserved.</p>
-    </footer>
-
 </body>
 </html>

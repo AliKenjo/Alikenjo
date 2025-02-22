@@ -1,27 +1,24 @@
-// EmailJS initialisieren
-(function() {
-    emailjs.init("E4_w057TlDZGKkLsU");
-})();
+// Scroll Animation for Sections
+const sections = document.querySelectorAll("section");
 
-// Event-Listener für das Absenden des Formulars
-document.getElementById("contact").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    const templateParams = {
-      from_name: document.getElementById("name").value,
-      reply_to: document.getElementById("email").value,
-      message: document.getElementById("message").value
-    };
+const checkVisibility = () => {
+    sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionBottom = section.getBoundingClientRect().bottom;
+        if (sectionTop < window.innerHeight * 0.8 && sectionBottom > 0) {
+            section.classList.add("visible");
+        }
+    });
+};
 
-    console.log("Sending message with parameters:", templateParams); // Debugging-Log
+window.addEventListener("scroll", checkVisibility);
+window.addEventListener("load", checkVisibility);
 
-    emailjs.send("service_s2wd5jm", "template_2ft7yhn", templateParams)
-      .then(function(response) {
-        alert("Message sent successfully!");
-        console.log("SUCCESS!", response.status, response.text);
-      }, function(error) {
-        alert("Error sending message.");
-        console.log("FAILED...", error);
-      });
+// Hover Effect for Profile Photo
+const profilePhoto = document.querySelector(".cv-photo");
+profilePhoto.addEventListener("mouseenter", () => {
+    profilePhoto.style.transform = "scale(1.1)";
 });
-
+profilePhoto.addEventListener("mouseleave", () => {
+    profilePhoto.style.transform = "scale(1)";
+});
