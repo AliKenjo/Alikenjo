@@ -22,3 +22,10 @@ profilePhoto.addEventListener("mouseenter", () => {
 profilePhoto.addEventListener("mouseleave", () => {
     profilePhoto.style.transform = "scale(1)";
 });
+
+// Flip the Contact Card on Click
+const contactCard = document.querySelector(".contact-card");
+
+contactCard.addEventListener("click", () => {
+    contactCard.classList.toggle("flipped");
+});
